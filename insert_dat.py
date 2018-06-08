@@ -1,20 +1,11 @@
-import sqlite3, datetime
+import sqlite3
 
 print("Programa ejecutado")
 
-cadena_texto = input("Introduzca una cadena de texto: ")
-entero = input("Introduzca un número entero: ")
-decim = input("Introduzca un número decimal: ")
+nombre_receta = input("Introduzca el nombre de la receta: ")
+ingredientes = input("Introduzca los ingredientes: ")
+pasos = input("Introduzca los pasos: ")
 
-try: entero = int(entero)
-except ValueError:
-    print(entero, "no es un número entero")
-    exit()
-
-try: decim = float(decim) or int(decim)
-except ValueError:
-    print(decim, "no es un número decimal")
-    exit()
 
 
 
@@ -32,11 +23,11 @@ conexion = sqlite3.connect("sqlite3/Dat1.sqlite3")
 consulta = conexion.cursor()
 
 #Valor de los argumentos
-argumentos = (cadena_texto, entero, decim, datetime.date.today())
+argumentos = (nombre_receta, ingredientes, pasos)
 
 sql = """
-INSERT INTO Dat1(cadena_texto, entero, decim, fecha)
-VALUES (?, ?, ?, ?)
+INSERT INTO Dat1(nombre_receta, ingredientes, pasos)
+VALUES (?, ?, ?)
 """
 
 # Realizar la consulta
