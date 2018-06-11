@@ -15,7 +15,7 @@ pasos VARCHAR(300) NOT NULL)"""
 
 #Ejecutar la consulta
 if(consulta.execute(insert)) : 
-    print("Tabla creada con exito")
+    print("Tabla creada con éxito")
 else:
     print("Ha ocurrido un error al crear la tabla")
 
