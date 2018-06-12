@@ -1,6 +1,6 @@
 import sqlite3
 
-print("Programa ejecutado")
+print("Inicie a crear sus recetas:")
 
 nombre_receta = input("Introduzca el nombre de la receta: ")
 ingredientes = input("Introduzca los ingredientes: ")
