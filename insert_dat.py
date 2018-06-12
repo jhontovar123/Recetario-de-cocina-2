@@ -32,7 +32,7 @@ VALUES (?, ?, ?)
 
 # Realizar la consulta
 if (consulta.execute(sql, argumentos)):
-    print("Registro guardado con exito")
+    print("Registro guardado con éxito")
 else: ("Ha ocurrido un error al guardar el registro")
 
 #Se termina la consulta
@@ -42,4 +42,5 @@ consulta.close()
 #Se guarda los cambios en la base de datos
 conexion.commit()
 
+#Terminar conexión
 conexion.close()
