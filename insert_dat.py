@@ -3,9 +3,22 @@ import sqlite3
 print("Programa ejecutado")
 
 nombre_receta = input("Introduzca el nombre de la receta: ")
-ingredientes = input("Introduzca los ingredientes: ")
-pasos = input("Introduzca los pasos: ")
-
+ingredientes=[]
+for i in range(50):
+    i= input("Introduzca ingrediente:")
+    ingredientes.append(i)
+    if i=="nada":
+        break
+a= len(ingredientes)
+print("Los ingredientes son:", ingredientes[0:a-1])
+Pasos=[]
+for i in range(50):
+  i=input("Ingresar paso:")
+  Pasos.append(i)
+  if i=="nada":
+    break
+b=len(Pasos)
+print("Los pasos son:", Pasos[0:b-1])
 
 
 
