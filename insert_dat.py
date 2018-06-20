@@ -43,7 +43,7 @@ consulta = conexion.cursor()
 argumentos = (nombre_receta, ingre, pasos)
 
 sql = """
-INSERT INTO Dat1(nombre_receta, ingredientes, pasos)
+INSERT INTO Dat1(nombre_receta, ingre, pasos)
 VALUES (?, ?, ?)
 """
 
