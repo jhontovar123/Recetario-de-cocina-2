@@ -10,7 +10,9 @@ for i in range(50):
     if i=="nada":
         break
 a= len(ingredientes)
-print("Los ingredientes son:", ingredientes[0:a-1])
+ingre= " ".join(ingredientes[0:a-1])
+print("Los ingredientes son:", ingre)
+
 Pasos=[]
 for i in range(50):
   i=input("Ingresar paso:")
@@ -18,7 +20,9 @@ for i in range(50):
   if i=="nada":
     break
 b=len(Pasos)
-print("Los pasos son:", Pasos[0:b-1])
+pasos= " ".join(Pasos[0:b-1])
+print("Los pasos son:", pasos)
+
 
 
 
@@ -36,7 +40,7 @@ conexion = sqlite3.connect("sqlite3/Dat1.sqlite3")
 consulta = conexion.cursor()
 
 #Valor de los argumentos
-argumentos = (nombre_receta, ingredientes, pasos)
+argumentos = (nombre_receta, ingre, pasos)
 
 sql = """
 INSERT INTO Dat1(nombre_receta, ingredientes, pasos)
