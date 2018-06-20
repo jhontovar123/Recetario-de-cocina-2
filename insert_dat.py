@@ -11,7 +11,7 @@ for i in range(20):
         break
 a= len(ingredientes)
 ingredientes= " ".join(ingredientes[0:a-1])
-print("Los ingredientes son:", ingre)
+print("Los ingredientes son:", ingredientes)
 
 Pasos=[]
 for i in range(20):
