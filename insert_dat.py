@@ -4,20 +4,20 @@ print("Programa ejecutado")
 
 nombre_receta = input("Introduzca el nombre de la receta: ")
 ingredientes=[]
-for i in range(50):
+for i in range(20):
     i= input("Introduzca ingrediente:")
     ingredientes.append(i)
-    if i=="nada":
+    if i=="":
         break
 a= len(ingredientes)
 ingre= " ".join(ingredientes[0:a-1])
 print("Los ingredientes son:", ingre)
 
 Pasos=[]
-for i in range(50):
+for i in range(20):
   i=input("Ingresar paso:")
   Pasos.append(i)
-  if i=="nada":
+  if i=="":
     break
 b=len(Pasos)
 pasos= " ".join(Pasos[0:b-1])
